@@ -1,6 +1,7 @@
-[build]
-command = "npm run build" # should run only `next build`
-publish = ".next"
-
-[[plugins]]
-package = "@netlify/plugin-nextjs"
+# netlify.toml (for sydneyot.com)
+[[redirects]]
+from = "/signpad/*"
+to = "https://effulgent-lolly-8462e0.netlify.app/signpad/:splat"
+status = 200                                                     # ← silent proxy, never tells the browser to change URL
+force = true
+conditions = { Host = ["sydneyot.com", "www.sydneyot.com"] }
