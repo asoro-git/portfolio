@@ -21,7 +21,7 @@ export default function Home() {
         style={{ fontSize: "30px" }}
       >
         <p className="font-extrabold ">Useful links</p>
-        <Link className="underline" href={"/signpad"}>
+        <Link className="underline" href={"/signpad/"}>
           Signature Pad
         </Link>
       </div>
