@@ -4,8 +4,10 @@ import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
   const host = req.headers.get("host");
-  if (host === "sydneyot.com" && req.nextUrl.pathname === "/") {
-    return NextResponse.redirect(new URL("/signpad", req.url));
+  if (host === "sydneyot.com" && req.nextUrl.pathname.startsWith("/signpad")) {
+    return NextResponse.redirect(
+      `https://effulgent-lolly-8462e0.netlify.app${req.nextUrl.pathname}`,
+    );
   }
   return NextResponse.next();
 }
