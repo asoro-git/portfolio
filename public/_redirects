@@ -1,4 +1,0 @@
-/signpad/* https://effulgent-lolly-8462e0.netlify.app/ 200!
-# proxy any root-level assets the side-app is asking for
-# /static/*      https://your-side-app.netlify.app/static/:splat  200!
-# /_next/*       https://your-side-app.netlify.app/_next/:splat   200!
