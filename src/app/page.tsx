@@ -9,10 +9,6 @@ export default function Home() {
             >
                 SydneyOT.com
                 <br />
-                <br /> Click below to try out
-                <Link className="border rounded" href={"/signpad"}>
-                    Signature Pad
-                </Link>
             </div>
             <div
                 className="h-1/3 flex flex-col items-center justify-end"
@@ -23,7 +19,7 @@ export default function Home() {
                     <div>All rights reserved.</div>
                 </div>
                 <div className="text-center flex flex-wrap justify-center items-center gap-x-2">
-                    Site made by Stanley
+
                 </div>
             </div>
         </>
