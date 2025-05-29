@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex flex-col justify-center items-center text-gray-400 py-16">
+      <footer className="flex flex-col justify-center items-center text-gray-400 py-8">
         <div className="max-w-lg">
           <div className="p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-800 transition-shadow hover:shadow-xl">
             <p className="leading-relaxed">
@@ -25,9 +25,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16 text-sm text-center text-gray-500">
-          <div className="flex flex-wrap justify-center items-center">
-            <span>© {new Date().getFullYear()}</span>
+        <div className="mt-8 text-sm text-center text-gray-500">
+          <div className="gap-2 flex flex-wrap justify-center items-center">
+            <span>© {new Date().getFullYear()} </span>
             <span>All rights reserved.</span>
           </div>
         </div>
