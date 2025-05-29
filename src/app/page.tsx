@@ -17,10 +17,10 @@ export default function Home() {
         <div className="max-w-2xl mx-auto grid gap-12">
           <div className="p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-800 transition-shadow hover:shadow-xl">
             <p className="leading-relaxed">
-              If you're here trying to send me web design services emails, stop
-              wasting your time, and more importantly, mine. I already build
-              sites. If you need one to pretend you're an expert, I can do it
-              for you. And yes, you’ll be paying.
+              If you&apos;re here trying to send me web design services emails,
+              stop wasting your time, and more importantly, mine. I already
+              build sites. If you need one to pretend you&apos;re an expert, I
+              can do it for you. And yes, you’ll be paying.
             </p>
           </div>
         </div>
