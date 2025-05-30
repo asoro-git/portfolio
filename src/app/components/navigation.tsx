@@ -28,7 +28,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
-    <NavigationMenu className="text-center mt-20 border border-zinc-500 rounded-3xl w-full box-shadow-2xs">
+    <NavigationMenu className="text-center mt-20 border border-zinc-800 rounded-3xl">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Introduction</NavigationMenuTrigger>
