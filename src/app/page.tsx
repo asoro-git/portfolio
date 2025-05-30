@@ -12,15 +12,12 @@ export default function Home() {
           </h1>
         </div>
       </main>
-
       <footer className="flex flex-col justify-center items-center text-gray-400 py-8">
         <div className="max-w-lg">
           <div className="p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-800 transition-shadow hover:shadow-xl">
             <p className="leading-relaxed">
               If you&apos;re here trying to send me web design services emails,
-              stop wasting your time, and more importantly, mine. I already
-              build sites. If you need one to pretend you&apos;re an expert, I
-              can do it for you. And yes, you’ll be paying.
+              stop wasting your time.
             </p>
           </div>
         </div>
