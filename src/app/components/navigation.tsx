@@ -28,10 +28,12 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
-    <NavigationMenu className="text-center mt-20 border border-zinc-700 rounded-3xl">
+    <NavigationMenu className="hidden md:block h-full text-center mt-20 border border-zinc-800 rounded-3xl">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Introduction</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="rounded-3xl ps-6 pe-4">
+            Introduction
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -54,7 +56,9 @@ export function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Updates</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="rounded-3xl ps-6 pe-5">
+            Updates
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -71,7 +75,7 @@ export function NavigationBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/" passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className="rounded-3xl ps-4 pe-4">
               Documentation
             </NavigationMenuLink>
           </Link>

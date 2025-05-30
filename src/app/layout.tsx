@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark antialiased h-full`}
+        className={`dark max-w-screen justify-center items-center flex flex-col  antialiased h-full`}
         style={{ fontFamily: "monospace" }}
       >
         {children}
