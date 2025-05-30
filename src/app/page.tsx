@@ -15,7 +15,7 @@ export default function Home() {
       <footer className="flex flex-col justify-center items-center text-gray-400 py-8">
         <div className="max-w-lg">
           <div className="p-6 md:p-8 rounded-2xl shadow-lg border border-zinc-800 transition-shadow hover:shadow-xl">
-            <p className="leading-relaxed">
+            <p className="text-center leading-relaxed">
               If you&apos;re here trying to send me web design services emails,
               stop wasting your time.
             </p>
