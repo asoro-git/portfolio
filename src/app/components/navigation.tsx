@@ -27,7 +27,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationBar() {
   return (
-    <NavigationMenu className="hidden md:block h-full text-center mt-20 border border-zinc-800 rounded-3xl">
+    <NavigationMenu className="hidden md:block h-full text-center mt-20 border border-zinc-700 rounded-3xl">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="rounded-3xl ps-6 pe-4">
