@@ -2,8 +2,3 @@
   functions = "netlify/functions"
   publish = "public"
 
-[[redirects]]
-  from = "/*"
-  to = "https://venncare.com.au"
-  status = 301
-  force = true
