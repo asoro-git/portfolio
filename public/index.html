@@ -1,500 +1,726 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- 1. SEO -->
-    <title>Sydney OT | OT Services | OT home visits | Mobile OT | NDIS & Core Funding Accepted</title>
-    <meta name="description" content="Live OT capacity tracker for SWS. VennCare (OPEN). Accepting Plan-Managed & Self-Managed NDIS participants. Core Funding (01_661) accepted for immediate FCA & Therapy.">
-    <meta name="keywords" content="Sydney OT Waitlist, OT Capacity Edmondson Park, NDIS Core Funding OT, 01_661_0128_1_3, Support at Home OT, VennCare">
-    <link rel="canonical" href="https://sydneyot.com/">
-    
+    <title>
+      Sydney OT | OT Services | OT home visits | Mobile OT | NDIS & Core Funding
+      Accepted
+    </title>
+    <meta
+      name="description"
+      content="Live OT capacity tracker for SWS. VennCare (OPEN). Accepting Plan-Managed & Self-Managed NDIS participants. Core Funding (01_661) accepted for immediate FCA & Therapy."
+    />
+    <meta
+      name="keywords"
+      content="Sydney OT Waitlist, OT Capacity Edmondson Park, NDIS Core Funding OT, 01_661_0128_1_3, Support at Home OT, VennCare"
+    />
+    <link rel="canonical" href="https://sydneyot.com/" />
+
     <!-- 2. FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- 3. SCHEMA -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "name": "Sydney OT",
-          "url": "https://sydneyot.com"
-        },
-        {
-          "@type": "MedicalBusiness",
-          "name": "Sydney OT (VennCare)",
-          "description": "Occupational Therapy intake portal. Accepting CB, ECEI, and Core Funding (Plan/Self Managed).",
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "NSW",
-            "addressLocality": "Edmondson Park"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Sydney OT",
+            "url": "https://sydneyot.com"
           },
-          "priceRange": "NDIS Fee Schedule"
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Does VennCare accept NDIA Managed participants?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Currently, VennCare accepts Plan-Managed and Self-Managed participants only. VennCare is in the process of obtaining NDIS Registration for Agency Managed clients."
+          {
+            "@type": "MedicalBusiness",
+            "name": "Sydney OT (VennCare)",
+            "description": "Occupational Therapy intake portal. Accepting CB, ECEI, and Core Funding (Plan/Self Managed).",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "NSW",
+              "addressLocality": "Edmondson Park"
+            },
+            "priceRange": "NDIS Fee Schedule"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Does VennCare accept NDIA Managed participants?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Currently, VennCare accepts Plan-Managed and Self-Managed participants only. VennCare is in the process of obtaining NDIS Registration for Agency Managed clients."
+                }
               }
-            }
-          ]
-        }
-      ]
-    }
+            ]
+          }
+        ]
+      }
     </script>
 
     <style>
-        /* --- COOL NAVY THEME --- */
-        :root {
-            --bg: #f1f5f9;
-            --surface: #ffffff;
-            --border: #cbd5e1;
-            --navy-900: #0f172a;
-            --navy-800: #1e293b;
-            --blue-accent: #0ea5e9;
-            --green-accent: #10b981;
-            --text-main: #0f172a;
-            --text-sub: #64748b;
-        }
+      /* --- COOL NAVY THEME --- */
+      :root {
+        --bg: #f1f5f9;
+        --surface: #ffffff;
+        --border: #cbd5e1;
+        --navy-900: #0f172a;
+        --navy-800: #1e293b;
+        --blue-accent: #0ea5e9;
+        --green-accent: #10b981;
+        --text-main: #0f172a;
+        --text-sub: #64748b;
+      }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--bg);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
 
-        /* --- HEADER --- */
-        header {
-            background: var(--navy-900);
-            color: white;
-            padding: 20px 0;
-            border-bottom: 4px solid var(--blue-accent);
-        }
-        .header-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .site-title { font-weight: 800; font-size: 18px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--surface); }
-        .last-updated { font-size: 12px; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; }
+      /* --- HEADER --- */
+      header {
+        background: var(--navy-900);
+        color: white;
+        padding: 20px 0;
+        border-bottom: 4px solid var(--blue-accent);
+      }
+      .header-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .site-title {
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--surface);
+      }
+      .last-updated {
+        font-size: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 4px 10px;
+        border-radius: 4px;
+      }
 
-        /* --- MARKET ALERT --- */
-        .market-alert {
-            background: #e0f2fe;
-            border-bottom: 1px solid #bae6fd;
-            text-align: center;
-            padding: 12px;
-            font-size: 14px;
-            color: #0369a1;
-            font-weight: 600;
-        }
+      /* --- MARKET ALERT --- */
+      .market-alert {
+        background: #e0f2fe;
+        border-bottom: 1px solid #bae6fd;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+        color: #0369a1;
+        font-weight: 600;
+      }
 
-        /* --- CONTAINER --- */
-        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
-        h1 { font-size: 32px; font-weight: 800; margin-bottom: 10px; color: var(--navy-900); }
-        .lead { color: var(--text-sub); margin-bottom: 40px; font-size: 16px; max-width: 600px; }
+      /* --- CONTAINER --- */
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: var(--navy-900);
+      }
+      .lead {
+        color: var(--text-sub);
+        margin-bottom: 40px;
+        font-size: 16px;
+        max-width: 600px;
+      }
 
-        /* --- STATUS BOARD (SPOTLIGHT CONTAINER) --- */
-        .status-board {
-            background: var(--surface);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
-            margin-bottom: 60px;
-            border: 1px solid var(--border);
-            position: relative;
-        }
+      /* --- STATUS BOARD (SPOTLIGHT CONTAINER) --- */
+      .status-board {
+        background: var(--surface);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
+        margin-bottom: 60px;
+        border: 1px solid var(--border);
+        position: relative;
+      }
 
+      .board-header {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+        background: var(--navy-800);
+        padding: 18px 25px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #94a3b8;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* --- DYNAMIC ROWS --- */
+      .provider-row {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+        padding: 25px;
+        border-bottom: 1px solid var(--border);
+        align-items: center;
+        position: relative;
+        cursor: default;
+        background: var(--surface); /* Default bg */
+        /* Prepare variables for JS */
+        --mouse-x: 0px;
+        --mouse-y: 0px;
+        transition: all 0.2s ease;
+      }
+      .provider-row:last-child {
+        border-bottom: none;
+      }
+
+      /* THE SPOTLIGHT EFFECT */
+      .provider-row::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          800px circle at var(--mouse-x) var(--mouse-y),
+          rgba(241, 245, 249, 1),
+          /* Light Grey Highlight */ transparent 40%
+        );
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      /* HIGHLIGHT ROW (VENNCARE) SPOTLIGHT COLOR */
+      .highlight-row::before {
+        background: radial-gradient(
+          800px circle at var(--mouse-x) var(--mouse-y),
+          rgba(204, 251, 241, 0.6),
+          /* Teal Highlight */ transparent 40%
+        );
+      }
+
+      /* SHOW SPOTLIGHT ON HOVER */
+      .provider-row:hover::before {
+        opacity: 1;
+      }
+
+      /* CONTENT Z-INDEX (To sit above spotlight) */
+      .provider-row > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* VENNCARE BORDER */
+      .highlight-row {
+        border-left: 4px solid var(--blue-accent);
+      }
+
+      /* TYPOGRAPHY */
+      .provider-name {
+        font-weight: 700;
+        font-size: 16px;
+        display: block;
+        color: var(--navy-900);
+      }
+      .provider-meta {
+        font-size: 13px;
+        color: var(--text-sub);
+        margin-top: 5px;
+        display: block;
+      }
+
+      /* BADGES */
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .badge.open {
+        background: #dcfce7;
+        color: #166534;
+        border: 1px solid #bbf7d0;
+      }
+      .badge.neutral {
+        background: #f1f5f9;
+        color: #64748b;
+        border: 1px solid #e2e8f0;
+      }
+
+      /* BUTTON */
+      .action-btn {
+        display: inline-block;
+        background: var(--blue-accent);
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.3);
+        transition: all 0.2s;
+        text-align: center;
+      }
+      .action-btn:hover {
+        background: #0284c7;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.4);
+      }
+      .no-action {
+        color: var(--text-sub);
+        font-size: 13px;
+        font-style: italic;
+        padding: 12px 0;
+        display: block;
+      }
+
+      /* --- INFO GRID --- */
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 50px;
+      }
+      .info-card {
+        background: var(--surface);
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.2s,
+          border-color 0.2s;
+      }
+      .info-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--blue-accent);
+      }
+      .info-card h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: var(--navy-900);
+      }
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .info-list li {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .info-list li:last-child {
+        border-bottom: none;
+      }
+
+      .check {
+        color: var(--green-accent);
+        font-weight: bold;
+      }
+      .cross {
+        color: #ef4444;
+        font-weight: bold;
+      }
+
+      /* --- FAQ SECTION --- */
+      .faq-section {
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 1px solid var(--border);
+      }
+      .faq-title {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: var(--navy-900);
+      }
+
+      details {
+        background: white;
+        margin-bottom: 15px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.2s;
+      }
+      details:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      summary {
+        padding: 15px 20px;
+        font-weight: 600;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f8fafc;
+        color: var(--navy-900);
+        transition: background 0.2s;
+      }
+      summary:hover {
+        background: #e2e8f0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary::after {
+        content: "+";
+        color: var(--text-sub);
+        font-size: 18px;
+      }
+      details[open] summary::after {
+        content: "-";
+      }
+
+      .faq-answer {
+        padding: 20px;
+        font-size: 14px;
+        color: var(--text-sub);
+        border-top: 1px solid var(--border);
+        line-height: 1.6;
+      }
+
+      /* Code Block in FAQ */
+      .code-block {
+        background: #f1f5f9;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 12px;
+        color: #0f172a;
+        display: block;
+        margin-top: 8px;
+        border: 1px solid #e2e8f0;
+      }
+
+      footer {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 12px;
+        color: var(--text-sub);
+        padding-bottom: 40px;
+      }
+
+      @media (max-width: 600px) {
         .board-header {
-            display: grid;
-            grid-template-columns: 2fr 1.5fr 1.5fr;
-            background: var(--navy-800);
-            padding: 18px 25px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #94a3b8;
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
+          display: none;
         }
-
-        /* --- DYNAMIC ROWS --- */
         .provider-row {
-            display: grid;
-            grid-template-columns: 2fr 1.5fr 1.5fr;
-            padding: 25px;
-            border-bottom: 1px solid var(--border);
-            align-items: center;
-            position: relative;
-            cursor: default;
-            background: var(--surface); /* Default bg */
-            /* Prepare variables for JS */
-            --mouse-x: 0px;
-            --mouse-y: 0px;
-            transition: all 0.2s ease;
+          grid-template-columns: 1fr;
+          gap: 15px;
+          text-align: left;
         }
-        .provider-row:last-child { border-bottom: none; }
-
-        /* THE SPOTLIGHT EFFECT */
-        .provider-row::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(
-                800px circle at var(--mouse-x) var(--mouse-y),
-                rgba(241, 245, 249, 1), /* Light Grey Highlight */
-                transparent 40%
-            );
-            opacity: 0;
-            transition: opacity 0.5s;
-            z-index: 1;
-            pointer-events: none;
-        }
-        
-        /* HIGHLIGHT ROW (VENNCARE) SPOTLIGHT COLOR */
-        .highlight-row::before {
-            background: radial-gradient(
-                800px circle at var(--mouse-x) var(--mouse-y),
-                rgba(204, 251, 241, 0.6), /* Teal Highlight */
-                transparent 40%
-            );
-        }
-
-        /* SHOW SPOTLIGHT ON HOVER */
-        .provider-row:hover::before { opacity: 1; }
-        
-        /* CONTENT Z-INDEX (To sit above spotlight) */
-        .provider-row > * { position: relative; z-index: 2; }
-
-        /* VENNCARE BORDER */
-        .highlight-row { border-left: 4px solid var(--blue-accent); }
-
-        /* TYPOGRAPHY */
-        .provider-name { font-weight: 700; font-size: 16px; display: block; color: var(--navy-900); }
-        .provider-meta { font-size: 13px; color: var(--text-sub); margin-top: 5px; display: block; }
-        
-        /* BADGES */
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        .badge.open { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
-        .badge.neutral { background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
-
-        /* BUTTON */
-        .action-btn {
-            display: inline-block;
-            background: var(--blue-accent);
-            color: white;
-            font-weight: 600;
-            font-size: 13px;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.3);
-            transition: all 0.2s;
-            text-align: center;
-        }
-        .action-btn:hover {
-            background: #0284c7;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.4);
-        }
-        .no-action { color: var(--text-sub); font-size: 13px; font-style: italic; padding: 12px 0; display: block; }
-
-        /* --- INFO GRID --- */
         .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-top: 50px;
+          grid-template-columns: 1fr;
         }
-        .info-card {
-            background: var(--surface);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            transition: transform 0.2s, border-color 0.2s;
+        h1 {
+          font-size: 26px;
         }
-        .info-card:hover { transform: translateY(-2px); border-color: var(--blue-accent); }
-        .info-card h3 { margin-top: 0; font-size: 18px; color: var(--navy-900); }
-        .info-list { list-style: none; padding: 0; margin-top: 20px; }
-        .info-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .info-list li:last-child { border-bottom: none; }
-        
-        .check { color: var(--green-accent); font-weight: bold; }
-        .cross { color: #ef4444; font-weight: bold; }
-
-        /* --- FAQ SECTION --- */
-        .faq-section { margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--border); }
-        .faq-title { font-size: 20px; font-weight: 800; margin-bottom: 20px; color: var(--navy-900); }
-        
-        details {
-            background: white;
-            margin-bottom: 15px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: box-shadow 0.2s;
-        }
-        details:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        
-        summary {
-            padding: 15px 20px;
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #f8fafc;
-            color: var(--navy-900);
-            transition: background 0.2s;
-        }
-        summary:hover { background: #e2e8f0; }
-        summary::-webkit-details-marker { display: none; }
-        summary::after { content: "+"; color: var(--text-sub); font-size: 18px; }
-        details[open] summary::after { content: "-"; }
-        
-        .faq-answer {
-            padding: 20px;
-            font-size: 14px;
-            color: var(--text-sub);
-            border-top: 1px solid var(--border);
-            line-height: 1.6;
-        }
-        
-        /* Code Block in FAQ */
-        .code-block {
-            background: #f1f5f9;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: monospace;
-            font-size: 12px;
-            color: #0f172a;
-            display: block;
-            margin-top: 8px;
-            border: 1px solid #e2e8f0;
-        }
-
-        footer { margin-top: 80px; text-align: center; font-size: 12px; color: var(--text-sub); padding-bottom: 40px; }
-
-        @media (max-width: 600px) {
-            .board-header { display: none; }
-            .provider-row { grid-template-columns: 1fr; gap: 15px; text-align: left; }
-            .info-grid { grid-template-columns: 1fr; }
-            h1 { font-size: 26px; }
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
-        <div class="header-content">
-            <div class="site-title">Sydney OT Availability Index</div>
-            <div class="last-updated">Last Update: <span id="date-display">Dec 2025</span></div>
+      <div class="header-content">
+        <div class="site-title">Sydney OT Services</div>
+        <div class="last-updated">
+          Last Update: <span id="date-display">Dec 2025</span>
         </div>
+      </div>
     </header>
 
     <!-- MARKET ALERT -->
     <div class="market-alert">
-        ℹ️ <strong>Sector Update:</strong> High demand in SWS is impacting intake capacity. Flexible billing available.
+      ℹ️ <strong>Sector Update:</strong> High demand in SWS is impacting intake
+      capacity. Flexible billing available.
     </div>
 
     <div class="container">
-        <h1>Clinical Capacity Tracker</h1>
-        <p class="lead">Real-time availability status for verified Occupational Therapy providers in South West Sydney (Liverpool, Edmondson Park, Fairfield).</p>
+      <h1>Mobile Occupational Therapy Services in Sydney</h1>
+      <p class="lead">
+        Real-time availability status for verified Occupational Therapy
+        providers in South West Sydney (Liverpool, Edmondson Park, Fairfield).
+      </p>
 
-        <!-- THE STATUS BOARD -->
-        <div class="status-board" id="board">
-            
-            <div class="board-header">
-                <div>Provider / Agency</div>
-                <div>Intake Status</div>
-                <div>Action</div>
-            </div>
-
-            <!-- VENNCARE (Highlighted) -->
-            <div class="provider-row highlight-row">
-                <div>
-                    <span class="provider-name">Sydney OT (VennCare)</span>
-                    <span class="provider-meta">NDIS (Core/CB) & Aged Care</span>
-                </div>
-                <div>
-                    <span class="badge open">● Verified Open</span>
-                    <div class="provider-meta">Report Turnaround: 15 Days</div>
-                </div>
-                <div>
-                    <a href="https://www.venncare.com.au/referral?utm_source=sydneyot_directory&utm_medium=referral_btn" class="action-btn">
-                        Book Assessment
-                    </a>
-                </div>
-            </div>
-
-            <!-- COMPETITORS -->
-            <div class="provider-row">
-                <div>
-                    <span class="provider-name">Other Agencies</span>
-                    <span class="provider-meta">Benevolent, Northcott, etc.</span>
-                </div>
-                <div>
-                    <span class="badge neutral">? Check Availability</span>
-                    <div class="provider-meta">Status varies by location</div>
-                </div>
-                <div>
-                    <span class="no-action">Contact Providers Directly</span>
-                </div>
-            </div>
-
-            <div class="provider-row">
-                <div>
-                    <span class="provider-name">SWS Local Health District</span>
-                    <span class="provider-meta">Community Health / Aged Care</span>
-                </div>
-                <div>
-                    <span class="badge neutral">⚠ Triage Basis</span>
-                    <div class="provider-meta">Risk-based allocation</div>
-                </div>
-                <div>
-                    <span class="no-action">GP Referral Required</span>
-                </div>
-            </div>
-
+      <!-- THE STATUS BOARD -->
+      <div class="status-board" id="board">
+        <div class="board-header">
+          <div>Provider / Agency</div>
+          <div>Intake Status</div>
+          <div>Action</div>
         </div>
 
-        <!-- INFO GRID -->
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>Liverpool / Edmondson Pk Scope</h3>
-                <p class="provider-meta">Primary Service Area</p>
-                <ul class="info-list">
-                    <li><span>FCA Reports</span> <span class="check">Available</span></li>
-                    <li><span>AT Applications</span> <span class="check">Available</span></li>
-                    <li><span>Minor Home Mods</span> <span class="check">Available</span></li>
-                    <li><span>Travel Fees</span> <span class="check">Local Rates (<30m)</span></li>
-                </ul>
-            </div>
-
-            <div class="info-card">
-                <h3>Parramatta / Hills Scope</h3>
-                <p class="provider-meta">Extended Service Area</p>
-                <ul class="info-list">
-                    <li><span>FCA Reports</span> <span class="check">Available</span></li>
-                    <li><span>AT Applications</span> <span class="check">Available</span></li>
-                    <li><span>Weekly Therapy</span> <span class="cross">Unavailable</span></li>
-                    <li><span>Travel Fees</span> <span class="cross">Standard Cap (60m)</span></li>
-                </ul>
-            </div>
+        <!-- VENNCARE (Highlighted) -->
+        <div class="provider-row highlight-row">
+          <div>
+            <span class="provider-name">Sydney OT (VennCare)</span>
+            <span class="provider-meta">NDIS (Core/CB) & Aged Care</span>
+          </div>
+          <div>
+            <span class="badge open">● Verified Open</span>
+            <div class="provider-meta">Report Turnaround: 15 Days</div>
+          </div>
+          <div>
+            <a
+              href="https://www.venncare.com.au/referral?utm_source=sydneyot_directory&utm_medium=referral_btn"
+              class="action-btn"
+            >
+              Book Assessment
+            </a>
+          </div>
         </div>
 
-        <!-- FAQ SECTION -->
-        <div class="faq-section">
-            <div class="faq-title">Coordinator & Billing FAQ</div>
-            
-            <details>
-                <summary>Can VennCare bill under Core Supports?</summary>
-                <div class="faq-answer">
-                    <strong>Yes.</strong> VennCare offers flexible billing for participants who have exhausted Capacity Building. 
-                    VennCare bills under <strong>Core - Disability Related Health Supports</strong> using the following line items:
-                    <span class="code-block">01_661_0128_1_3 (Assessment/Therapy - OT)</span>
-                </div>
-            </details>
-
-            <details>
-                <summary>Does VennCare accept NDIA Managed participants?</summary>
-                <div class="faq-answer">
-                    Currently, <strong>VennCare accepts Plan-Managed and Self-Managed participants only.</strong> 
-                    VennCare is in the progress of obtaining NDIS Registration for Agency Managed clients.
-                </div>
-            </details>
-
-            <details>
-                <summary>What Capacity Building codes does VennCare use?</summary>
-                <div class="faq-answer">
-                    For standard therapy and assessments (Improved Daily Living), VennCare uses:
-                    <span class="code-block">15_617_0128_1_3 (Assessment/Therapy - General)</span>
-                    <span class="code-block">15_617_0118_1_3 (Assessment/Therapy - General)</span>
-                </div>
-            </details>
-
-            <details>
-                <summary>Does VennCare accept Support at Home (Aged Care)?</summary>
-                <div class="faq-answer">
-                    Yes. VennCare provides Functional Assessments and Home Mods for <strong>Support at Home (SAP/ Former HCP)</strong> clients in South West Sydney.
-                </div>
-            </details>
-
-            <details>
-                <summary>How is travel billed?</summary>
-                <div class="faq-answer">
-                    VennCare follows the NDIS Pricing Arrangements (MMM1-3).
-                    <br><strong>SWS Local (Edmondson Pk/Liverpool):</strong> Billed at actual travel time (typically minimal <30-40 mins).
-                    <br><strong>Extended Zones:</strong> Capped at 40-60 mins depending on location.
-                </div>
-            </details>
+        <!-- COMPETITORS -->
+        <div class="provider-row">
+          <div>
+            <span class="provider-name">Other Agencies</span>
+            <span class="provider-meta">Benevolent, Northcott, etc.</span>
+          </div>
+          <div>
+            <span class="badge neutral">? Check Availability</span>
+            <div class="provider-meta">Status varies by location</div>
+          </div>
+          <div>
+            <span class="no-action">Contact Providers Directly</span>
+          </div>
         </div>
 
+        <div class="provider-row">
+          <div>
+            <span class="provider-name">SWS Local Health District</span>
+            <span class="provider-meta">Community Health / Aged Care</span>
+          </div>
+          <div>
+            <span class="badge neutral">⚠ Triage Basis</span>
+            <div class="provider-meta">Risk-based allocation</div>
+          </div>
+          <div>
+            <span class="no-action">GP Referral Required</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO GRID -->
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Liverpool / Edmondson Pk Scope</h3>
+          <p class="provider-meta">Primary Service Area</p>
+          <ul class="info-list">
+            <li>
+              <span>FCA Reports</span> <span class="check">Available</span>
+            </li>
+            <li>
+              <span>AT Applications</span> <span class="check">Available</span>
+            </li>
+            <li>
+              <span>Minor Home Mods</span> <span class="check">Available</span>
+            </li>
+            <li>
+              <span>Travel Fees</span>
+              <span class="check">Local Rates (<30m)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Parramatta / Hills Scope</h3>
+          <p class="provider-meta">Extended Service Area</p>
+          <ul class="info-list">
+            <li>
+              <span>FCA Reports</span> <span class="check">Available</span>
+            </li>
+            <li>
+              <span>AT Applications</span> <span class="check">Available</span>
+            </li>
+            <li>
+              <span>Weekly Therapy</span> <span class="cross">Unavailable</span>
+            </li>
+            <li>
+              <span>Travel Fees</span>
+              <span class="cross">Standard Cap (60m)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ SECTION -->
+      <div class="faq-section">
+        <div class="faq-title">Coordinator & Billing FAQ</div>
+
+        <details>
+          <summary>Can VennCare bill under Core Supports?</summary>
+          <div class="faq-answer">
+            <strong>Yes.</strong> VennCare offers flexible billing for
+            participants who have exhausted Capacity Building. VennCare bills
+            under
+            <strong>Core - Disability Related Health Supports</strong> using the
+            following line items:
+            <span class="code-block"
+              >01_661_0128_1_3 (Assessment/Therapy - OT)</span
+            >
+          </div>
+        </details>
+
+        <details>
+          <summary>Does VennCare accept NDIA Managed participants?</summary>
+          <div class="faq-answer">
+            Currently,
+            <strong
+              >VennCare accepts Plan-Managed and Self-Managed participants
+              only.</strong
+            >
+            VennCare is in the progress of obtaining NDIS Registration for
+            Agency Managed clients.
+          </div>
+        </details>
+
+        <details>
+          <summary>What Capacity Building codes does VennCare use?</summary>
+          <div class="faq-answer">
+            For standard therapy and assessments (Improved Daily Living),
+            VennCare uses:
+            <span class="code-block"
+              >15_617_0128_1_3 (Assessment/Therapy - General)</span
+            >
+            <span class="code-block"
+              >15_617_0118_1_3 (Assessment/Therapy - General)</span
+            >
+          </div>
+        </details>
+
+        <details>
+          <summary>Does VennCare accept Support at Home (Aged Care)?</summary>
+          <div class="faq-answer">
+            Yes. VennCare provides Functional Assessments and Home Mods for
+            <strong>Support at Home (SAP/ Former HCP)</strong> clients in South
+            West Sydney.
+          </div>
+        </details>
+
+        <details>
+          <summary>How is travel billed?</summary>
+          <div class="faq-answer">
+            VennCare follows the NDIS Pricing Arrangements (MMM1-3).
+            <br /><strong>SWS Local (Edmondson Pk/Liverpool):</strong> Billed at
+            actual travel time (typically minimal <30-40 mins). <br /><strong
+              >Extended Zones:</strong
+            >
+            Capped at 40-60 mins depending on location.
+          </div>
+        </details>
+      </div>
     </div>
 
+    <div
+      style="
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 1px solid #e2e8f0;
+      "
+    >
+      <h3 style="font-size: 16px; color: #0f172a; margin-bottom: 20px">
+        Specialized Clinical Pathways
+      </h3>
+      <div
+        style="
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <a
+          href="/liverpool-ot"
+          style="
+            text-decoration: none;
+            background: white;
+            padding: 10px 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            color: #334155;
+            font-size: 14px;
+            font-weight: 500;
+          "
+        >
+          📍 Liverpool & SWS Local OT
+        </a>
+        <a
+          href="/chinese-speaking-ot"
+          style="
+            text-decoration: none;
+            background: white;
+            padding: 10px 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            color: #334155;
+            font-size: 14px;
+            font-weight: 500;
+          "
+        >
+          🌏 Chinese Speaking Services (中文服务)
+        </a>
+      </div>
+    </div>
     <footer>
-        <p><strong>Transparency Notice:</strong> This index is maintained by VennCare Pty Ltd.</p>
+      <p>
+        <strong>Transparency Notice:</strong> This page is maintained by
+        VennCare Pty Ltd.
+      </p>
     </footer>
 
     <!-- DYNAMIC DATE & SPOTLIGHT ENGINE -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // 1. DATE UPDATER
-            const dateElement = document.getElementById("date-display");
-            const now = new Date();
-            const options = { month: 'short', year: 'numeric' };
-            dateElement.textContent = now.toLocaleDateString('en-US', options);
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. DATE UPDATER
+        const dateElement = document.getElementById("date-display");
+        const now = new Date();
+        const options = { month: "short", year: "numeric" };
+        dateElement.textContent = now.toLocaleDateString("en-US", options);
 
-            // 2. SPOTLIGHT ENGINE
-            const rows = document.querySelectorAll(".provider-row");
-            rows.forEach(row => {
-                row.addEventListener("mousemove", (e) => {
-                    const rect = row.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    row.style.setProperty("--mouse-x", `${x}px`);
-                    row.style.setProperty("--mouse-y", `${y}px`);
-                });
-            });
+        // 2. SPOTLIGHT ENGINE
+        const rows = document.querySelectorAll(".provider-row");
+        rows.forEach((row) => {
+          row.addEventListener("mousemove", (e) => {
+            const rect = row.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            row.style.setProperty("--mouse-x", `${x}px`);
+            row.style.setProperty("--mouse-y", `${y}px`);
+          });
         });
+      });
     </script>
-
-</body>
+  </body>
 </html>
